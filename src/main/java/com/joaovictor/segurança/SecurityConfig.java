@@ -17,11 +17,10 @@ public class SecurityConfig {
 SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
    return http 
   .authorizeHttpRequests(
-    
+
     authorizeConfig -> {
         authorizeConfig.requestMatchers("/publica").permitAll();
-        authorizeConfig.requestMatchers("/logout").permitAll();
-        authorizeConfig.anyRequest().authenticated();
+    authorizeConfig.anyRequest().authenticated();
       
    })
    .formLogin(Customizer.withDefaults())

@@ -1,4 +1,4 @@
-package com.joaovictor.demo;
+package com.joaovictor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
